@@ -1,13 +1,9 @@
-/* Element Selectors */
+/* Grouping Selectors */
 
-h1 {
+h1,
+h2,
+p {
     color: blue;
 }
 
-h2 {
-    color: red;
-}
-
-p {
-    color: fuchsia;
-}
+/*Note: Alone with Element selectors, Grouping can be done to all kinds of selectors*/
