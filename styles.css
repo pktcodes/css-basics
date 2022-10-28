@@ -1,18 +1,18 @@
-/* ID and CLASS SELECTORS */
-
-.green {
-    color: green;
+.blue {
+    color: blue;
+    background: yellow;
 }
 
 .red {
     color: red;
-    background: yellow;
+    background: aqua;
 }
 
-#title {
-    font-size: 50px;
-}
-
-.uppercase {
+span {
     text-transform: uppercase;
+}
+
+.highlight {
+    color: white;
+    background: black;
 }
