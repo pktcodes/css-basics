@@ -1,11 +1,10 @@
-/* ID SELECTORS */
+/* CLASS SELECTORS */
 
-#title {
-    color: blue;
-    background: yellow;
+.green {
+    color: green;
 }
 
-#footer {
+.red {
     color: red;
-    background-color: aqua;
+    background: yellow;
 }
