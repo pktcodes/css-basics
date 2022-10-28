@@ -1,18 +1,22 @@
-.blue {
+/* INHERITANCE */
+/* Children inherit styles from parent, unless have their own styles  */
+
+.blue-color {
     color: blue;
-    background: yellow;
 }
 
-.red {
+.green-color {
+    color: green;
+}
+
+.aqua-color {
+    color: aqua;
+}
+
+.purple-color {
+    color: purple;
+}
+
+body {
     color: red;
-    background: aqua;
-}
-
-span {
-    text-transform: uppercase;
-}
-
-.highlight {
-    color: white;
-    background: black;
 }
