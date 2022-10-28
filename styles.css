@@ -1,9 +1,11 @@
-/* Grouping Selectors */
+/* ID SELECTORS */
 
-h1,
-h2,
-p {
+#title {
     color: blue;
+    background: yellow;
 }
 
-/*Note: Alone with Element selectors, Grouping can be done to all kinds of selectors*/
+#footer {
+    color: red;
+    background-color: aqua;
+}
