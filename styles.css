@@ -1,22 +1,11 @@
-/* Last Rule - when target on same element with, whatever is the last position in the document will be applied*/
-p {
-    color: red;
-}
+/* Combine Selectors */
 
-p {
-    color: blue;
-}
+/* Descendant Selector - When targeting a child element which is inside the parent element */
 
-/* Specificity - when target on element with different type selector, whatever has the high Specificity will be applied regardless of position*/
-#paragraph {
-    color: green;
-}
-
-.paragraph {
+/* div p {
     color: aqua;
-}
+} */
 
-/* Universal Selector - * - will be used for entire document but has lowest specificity than other selectors, mostly used for overiding default browser styles*/
-* {
-    color: fuchsia;
+.container p {
+    color: blue;
 }
