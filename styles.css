@@ -1,25 +1,22 @@
-/* INHERITANCE */
-/* Children inherit styles from parent, unless have their own styles  */
+/* Last Rule - when target on same element with, whatever is the last position in the document will be applied*/
+p {
+    color: red;
+}
 
-/* Note: Just because we have children for a parent, it doesn't mean they can inherit all the styles from parent for example like border for body. So, to have that particulat styling need to apply to children directly.  */
-
-.blue-color {
+p {
     color: blue;
 }
 
-.green-color {
+/* Specificity - when target on element with different type selector, whatever has the high Specificity will be applied regardless of position*/
+#paragraph {
     color: green;
 }
 
-.aqua-color {
+.paragraph {
     color: aqua;
-    font-size: 20px;
 }
 
-body {
-    color: red;
-    font-family: monospace;
-    font-size: 30px;
-    line-height: 1.5;
-    border: 3px solid black;
+/* Universal Selector - * - will be used for entire document but has lowest specificity than other selectors, mostly used for overiding default browser styles*/
+* {
+    color: fuchsia;
 }
