@@ -1,25 +1,30 @@
-/* RGBA - A -> OPACITY/TRANSPARENCY  0 - 1  */
+/* 
+HSL
+HEX Values #RRGGBB
+123456789 A(10) B(11) C(12) D(13) E(14) F(15)
+          10    11    12    13    14    15
+
+          #FF0000 - Red
+          #00FF00 - Green
+*/
+
 
 #first {
-    color: rgba(255, 0, 0, 1);
-    background: rgba(0, 0, 0, 0);
+    color: #ff0000;
+    background: #000;
 }
 
 #second {
-    color: rgba(255, 0, 0, 0.75);
-    background: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    background: #00ff00;
 }
 
 #third {
-    color: rgba(255, 0, 0, 0.25);
-    background: rgba(0, 0, 0, 0.75);
+    color: #0000ff;
+    background: #ff2a00;
 }
 
 #fourth {
-    color: rgba(255, 0, 0, 0);
-    background: rgba(0, 0, 0, 1);
-}
-
-body {
-    background: rgba(239, 12, 239, 0.2);
+    color: #f234ad;
+    background: #222;
 }
