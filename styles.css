@@ -1,11 +1,12 @@
-/* Combine Selectors */
+/* COLOR PROPERTIES */
+/* BACKGROUND-COLOR, BACKGROUND */
 
-/* Descendant Selector - When targeting a child element which is inside the parent element */
+#first {
+    color: white;
+    background-color: black;
+}
 
-/* div p {
-    color: aqua;
-} */
-
-.container p {
-    color: blue;
+#second {
+    color: red;
+    background: yellow;
 }
