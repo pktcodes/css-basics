@@ -1,24 +1,13 @@
-/* 
- VSCODE OPTIONS
+/*  PIXELS - absolute values, one dot on the screen 
+FONT-SIZE - size of the font
+WIDTH - width of an element 
+HEIGHT - height of an element 
 */
 
-
-#first {
-    color: hsla(60, 100%, 51%, 0.950);
-    background: #000;
-}
-
-#second {
-    color: hwb(0 100% 0%);
-    background: hsl(120, 100%, 50%);
-}
-
-#third {
-    color: rgb(0, 0, 255);
-    background: #ff2a00;
-}
-
-#fourth {
-    color: #f234ad;
-    background: #222;
+h1 {
+    font-size: 60px;
+    background: blue;
+    color: white;
+    width: 1000px;
+    height: 400px;
 }
