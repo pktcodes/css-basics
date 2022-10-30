@@ -1,20 +1,25 @@
-/* RGB - RED, GREEEN, BLUE 0-255 */
+/* RGBA - A -> OPACITY/TRANSPARENCY  0 - 1  */
 
 #first {
-    color: rgb(255, 0, 0);
-    background-color: rgb(0, 0, 0);
+    color: rgba(255, 0, 0, 1);
+    background: rgba(0, 0, 0, 0);
 }
 
 #second {
-    color: rgb(0, 255, 0);
-    background-color: rgb(255, 255, 255);
+    color: rgba(255, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.25);
 }
 
 #third {
-    color: rgb(0, 0, 255);
-    background-color: rgb(249, 229, 9);
+    color: rgba(255, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.75);
+}
+
+#fourth {
+    color: rgba(255, 0, 0, 0);
+    background: rgba(0, 0, 0, 1);
 }
 
 body {
-    background-color: rgb(162, 130, 213);
+    background: rgba(239, 12, 239, 0.2);
 }
