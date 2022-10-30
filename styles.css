@@ -1,26 +1,20 @@
 /* 
-HSL
-HEX Values #RRGGBB
-123456789 A(10) B(11) C(12) D(13) E(14) F(15)
-          10    11    12    13    14    15
-
-          #FF0000 - Red
-          #00FF00 - Green
+ VSCODE OPTIONS
 */
 
 
 #first {
-    color: #ff0000;
+    color: hsla(60, 100%, 51%, 0.950);
     background: #000;
 }
 
 #second {
-    color: #fff;
-    background: #00ff00;
+    color: hwb(0 100% 0%);
+    background: hsl(120, 100%, 50%);
 }
 
 #third {
-    color: #0000ff;
+    color: rgb(0, 0, 255);
     background: #ff2a00;
 }
 
