@@ -1,20 +1,22 @@
 /* 
-rem - RELATIVE, depends on root
-1rem = base value (16px) * number (1)
+VIEWPORT UNITS
+vh - height - percent of the screen, 
+vw - width - percent of the screen
 */
 
-html {
-    font-size: 30px;
+/* To override the default browser margin style for clear view of vh and vw */
+* {
+    margin: 0;
 }
 
-.relative {
-    font-size: 2rem;
+.hero {
+    background: green;
+    height: 100vh;
+    width: 100vw;
 }
 
-.absolute {
-    font-size: 32px;
-}
-
-div {
-    font-size: 5px;
+.about {
+    background: blue;
+    height: 43vh;
+    width: 50vw;
 }
