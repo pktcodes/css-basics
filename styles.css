@@ -1,22 +1,9 @@
-/* 
-VIEWPORT UNITS
-vh - height - percent of the screen, 
-vw - width - percent of the screen
-*/
+/* DEFAULT BROWSER STYLES AND CHROME DEVTOOLS*/
 
-/* To override the default browser margin style for clear view of vh and vw */
-* {
-    margin: 0;
+h1 {
+    font-size: 50px;
 }
 
-.hero {
-    background: green;
-    height: 100vh;
-    width: 100vw;
-}
-
-.about {
-    background: blue;
-    height: 43vh;
-    width: 50vw;
+h2 {
+    color: blue;
 }
