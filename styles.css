@@ -1,9 +1,21 @@
-/* DEFAULT BROWSER STYLES AND CHROME DEVTOOLS*/
+/* 
+CALC ()
+PERFORM MATH OPERATIONS + - * /
+MIX AND MATCH VALUES
+*/
 
-h1 {
-    font-size: 50px;
+* {
+    margin: 0;
 }
 
-h2 {
-    color: blue;
+.navbar {
+    background: blue;
+    height: 6rem;
+    color: white;
+    font-size: 3rem;
+}
+
+.banner {
+    background: green;
+    height: calc(100vh - 6rem);
 }
