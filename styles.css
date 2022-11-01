@@ -1,12 +1,11 @@
-/* 
-font-stack generic-family
-serif, sans-serif, cursive, fantasy, monospace
-*/
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap");
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Permanent Marker", cursive;
+  font-size: 50px;
 }
