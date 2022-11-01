@@ -1,28 +1,35 @@
 /* 
-text-align, text-indent
+line-height - if number * by font-size
+letter-spacing
+word-spacing
+text-decoration
+text-transform
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&family=Trade+Winds&display=swap");
-
 body {
-  font-family: "Roboto", sans-serif;
-  text-align: right;
+  line-height: 2.5;
+  text-transform: uppercase;
 }
 
-/* font-weight:900 will not be applied here because we are importing only 400,700,500 of Roboto*/
-.main-heading {
-  font-family: "Trade Winds", cursive;
-  text-align: center;
+a {
+  text-decoration: none;
 }
 
-.sub-heading {
-  text-align: left;
+h1 {
+  text-decoration: line-through;
+  text-transform: uppercase;
 }
 
-.first-paragraph {
+.first {
+  letter-spacing: 5px;
+  text-decoration: overline;
 }
 
-.second-paragraph {
-  text-align: left;
-  text-indent: 6rem;
+.second {
+  word-spacing: 10px;
+  text-transform: lowercase;
+}
+
+.third {
+  text-transform: capitalize;
 }
