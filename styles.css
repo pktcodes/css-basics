@@ -1,33 +1,28 @@
 /* 
-font-weight - how thick or thin the characters in text should be
-font-style - sets font style for a text */
+text-align, text-indent
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&family=Trade+Winds&display=swap");
 
 body {
   font-family: "Roboto", sans-serif;
+  text-align: right;
 }
-
-/* h3 {
-  font-family: "Trade Winds", cursive;
-  font-size: 50px;
-} */
 
 /* font-weight:900 will not be applied here because we are importing only 400,700,500 of Roboto*/
 .main-heading {
-  font-weight: 900;
+  font-family: "Trade Winds", cursive;
+  text-align: center;
 }
 
 .sub-heading {
-  font-weight: 700;
-  font-style: italic;
+  text-align: left;
 }
 
 .first-paragraph {
-  font-style: normal;
 }
 
 .second-paragraph {
-  font-style: italic;
-  font-style: oblique;
-  font-style: normal;
+  text-align: left;
+  text-indent: 6rem;
 }
