@@ -1,15 +1,18 @@
-/* Padding - Distance between content and the edge of the element */
+/* Margin - Distance between element and the screen or element and some other elements */
 
 * {
+  margin: 0;
+}
+
+h1,
+p {
   color: white;
 }
 
 h1 {
   background: red;
-  padding-top: 40px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 50px;
+  padding: 40px;
+  margin: 3rem;
 }
 
 p {
@@ -17,4 +20,7 @@ p {
   /* padding: 40px; */
   /* padding: 30px 60px; */
   padding: 10px 30px 60px 80px;
+
+  /* margin-top: 20px;  */
+  margin: 30px 5px 40px 50px;
 }
