@@ -1,4 +1,4 @@
-/* Margin - Distance between element and the screen or element and some other elements */
+/* Border - In between padding and margin */
 
 * {
   margin: 0;
@@ -12,15 +12,19 @@ p {
 h1 {
   background: red;
   padding: 40px;
-  margin: 3rem;
+  margin: 1rem;
+  /* border-style: solid;
+  border-color: chartreuse;
+  border-width: 10px; */
+  border-bottom-color: aqua;
+  /* border-bottom-style: double; */
+  border-bottom-style: dotted;
+  border-bottom-width: 30px;
 }
 
 p {
   background: blue;
-  /* padding: 40px; */
-  /* padding: 30px 60px; */
   padding: 10px 30px 60px 80px;
-
-  /* margin-top: 20px;  */
   margin: 30px 5px 40px 50px;
+  border: 10px dashed red;
 }
