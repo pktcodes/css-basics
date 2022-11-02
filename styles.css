@@ -1,35 +1,20 @@
-/* 
-line-height - if number * by font-size
-letter-spacing
-word-spacing
-text-decoration
-text-transform
-*/
+/* Padding - Distance between content and the edge of the element */
 
-body {
-  line-height: 2.5;
-  text-transform: uppercase;
-}
-
-a {
-  text-decoration: none;
+* {
+  color: white;
 }
 
 h1 {
-  text-decoration: line-through;
-  text-transform: uppercase;
+  background: red;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 50px;
 }
 
-.first {
-  letter-spacing: 5px;
-  text-decoration: overline;
-}
-
-.second {
-  word-spacing: 10px;
-  text-transform: lowercase;
-}
-
-.third {
-  text-transform: capitalize;
+p {
+  background: blue;
+  /* padding: 40px; */
+  /* padding: 30px 60px; */
+  padding: 10px 30px 60px 80px;
 }
