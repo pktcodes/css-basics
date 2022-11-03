@@ -1,21 +1,28 @@
-/* Border-radius, Negative Margin */
+/* OUTLINE - on top of border and below the margin 
+OFFSET - Controls the spacing from away and inside the border */
 
-h1,
-p {
+.links {
+  margin: 50px;
+}
+
+a {
   color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 0 20px;
+  background: green;
 }
 
-h1 {
-  background: red;
-  padding: 40px;
-  border: 20px solid black;
-  border-radius: 40px;
+#first-link {
+  border: 0.2rem solid cyan;
+  outline: 2px dotted chartreuse;
+  outline-offset: -10px;
 }
 
-p {
-  background: blue;
-  padding: 20px;
-  border: 5px dotted springgreen;
-  border-radius: 50%;
-  margin-top: -50px; /* Placing paragraph over heading */
+#second-link {
+  outline-color: aqua;
+  outline-style: solid;
+  outline-width: 0.2rem;
+  outline-offset: 10px;
 }
