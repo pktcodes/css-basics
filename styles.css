@@ -1,28 +1,7 @@
-/* OUTLINE - on top of border and below the margin 
-OFFSET - Controls the spacing from away and inside the border */
+/* 
+Border Hack - to troubleshoot layout
+*/
 
-.links {
-  margin: 50px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 10px;
-  margin: 0 20px;
-  background: green;
-}
-
-#first-link {
-  border: 0.2rem solid cyan;
-  outline: 2px dotted chartreuse;
-  outline-offset: -10px;
-}
-
-#second-link {
-  outline-color: aqua;
-  outline-style: solid;
-  outline-width: 0.2rem;
-  outline-offset: 10px;
+* {
+  border: 2px solid red;
 }
