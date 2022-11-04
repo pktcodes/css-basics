@@ -1,19 +1,21 @@
 /* 
-ELEMENTS HAVE IT SET BY DEFAULT
-BLOCK : Always starts a new line and spans full width
-INLINE : Does not start a new line and spans only content
+ HORIZONTAL CENTERING
 */
 
 .block {
   background: blue;
   color: white;
-  display: block;
-  display: inline;
+  width: 300px;
+  margin: 2rem auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
 
 .inline {
   background: red;
   color: white;
-  display: inline;
-  display: block;
+}
+
+body {
+  text-align: center;
 }
