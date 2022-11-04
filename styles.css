@@ -1,21 +1,32 @@
 /* 
- HORIZONTAL CENTERING
+ BLOCK:browser respects width/height, top/bottom margin
+ INLINE:browser does not respect width/height, 
+ top/bottom margin
+ Navbar
+list-style-type:property
+descendant selectors
 */
 
-.block {
-  background: blue;
-  color: white;
-  width: 300px;
-  margin: 2rem auto;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-}
-
-.inline {
-  background: red;
-  color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: red;
+  background: black;
+  letter-spacing: 2px;
+  display: block;
+  padding: 5px;
+  /* margin: 10px; */
 }
