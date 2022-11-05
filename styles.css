@@ -1,4 +1,4 @@
-/* background-size */
+/* background-position */
 
 div {
   height: 300px;
@@ -10,12 +10,20 @@ div {
   background: url("./big.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 20% 50%;
+  background-position: center;
 }
 
 .small-img {
   background: url("./small.jpeg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-position: left;
+  background-position: right;
+  background-position: bottom;
+  background-position: top;
+  background-position: 0 0; /* Default behavior */
+  background-position: 20% 50%;
 }
 
 .folder-img {
