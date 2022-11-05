@@ -1,8 +1,19 @@
-/* background-position */
+/* background-attachment */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 div {
-  height: 300px;
+  height: 100vh;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 2rem;
   border: 2px solid red;
 }
 
@@ -10,24 +21,22 @@ div {
   background: url("./big.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 20% 50%;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .small-img {
-  background: url("./small.jpeg");
+  background: url("./images/folder-img.jpeg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  background-position: left;
-  background-position: right;
-  background-position: bottom;
-  background-position: top;
-  background-position: 0 0; /* Default behavior */
-  background-position: 20% 50%;
+  background-attachment: fixed;
 }
 
 .folder-img {
-  background: url("./images/folder-img.jpeg");
-  /* background-repeat: no-repeat; */
-  background-size: contain;
+  background: url("./big.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
