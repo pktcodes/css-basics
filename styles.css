@@ -1,42 +1,7 @@
-/* Linear Gradients */
+/* Linear Gradients - Background Image Overlay*/
+/* background - shorthand property */
 
 * {
-  width: 150px;
-  height: 200px;
-  margin: 5px;
-}
-
-/* by default direction is to bottom */
-.one {
-  background: linear-gradient(red, blue);
-}
-
-/* changing direction by text and multiple various values */
-.two {
-  background: linear-gradient(to top, red, blue, green, yellow, #f15602);
-}
-
-/* changing direction by degrees, default is 180 */
-.three {
-  background: linear-gradient(315deg, red, blue);
-}
-
-/* applying direction with go to top of right side */
-.four {
-  background: linear-gradient(to top right, red, yellow);
-}
-
-/* control from where to start */
-.five {
-  background: linear-gradient(red 20%, blue 50%);
-}
-
-/* using fading with rgba */
-.six {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
-}
-
-/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -51,6 +16,7 @@ div {
   text-transform: uppercase;
   font-size: 2rem;
   border: 2px solid red;
+  text-align: center;
 }
 
 .big-img {
@@ -58,21 +24,22 @@ div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .small-img {
-  background: url("./images/folder-img.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("./images/folder-img.jpeg") center/cover no-repeat fixed;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .folder-img {
-  background: url("./big.jpeg");
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./big.jpeg") no-repeat center/cover fixed;
+  /* background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-} */
+  background-position: center; */
+  /* background-attachment: fixed; */
+}
