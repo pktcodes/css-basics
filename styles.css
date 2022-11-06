@@ -43,3 +43,24 @@ div {
   background-position: center; */
   /* background-attachment: fixed; */
 }
+
+.colorzilla {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f46130+0,7eafe8+100 */
+  background: #f46130; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #f46130 0%,
+    #7eafe8 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #f46130 0%,
+    #7eafe8 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #f46130 0%,
+    #7eafe8 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f46130', endColorstr='#7eafe8',GradientType=0 ); /* IE6-9 */
+}
