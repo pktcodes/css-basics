@@ -1,31 +1,23 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* by default - position:static */
 
 div {
-  height: 200px;
-  width: 50%;
-  float: right;
+  border: 5px solid red;
+  background: yellow;
+  margin-top: 50px;
 }
 
 .first {
-  background: red;
+  background: blue;
+  color: white;
 }
 
 .second {
-  background: blue;
+  background: green;
+  color: white;
 }
 
-.third {
-  background: greenyellow;
-}
-
-.fourth {
+.special {
   background: fuchsia;
-}
-
-h1 {
-  clear: both;
+  color: black;
+  font-size: 20px;
 }
