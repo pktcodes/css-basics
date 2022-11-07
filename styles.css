@@ -1,4 +1,8 @@
-/* by default - position:static */
+/* 
+position:static - default, always positioned according to the normal flow,
+position:relative - position relative to it's normal position.
+top,bottom,left, right
+*/
 
 div {
   border: 5px solid red;
@@ -9,6 +13,11 @@ div {
 .first {
   background: blue;
   color: white;
+  position: relative;
+  /* top: 200px; */
+  bottom: 2rem;
+  /* left: 14%; */
+  right: 20px;
 }
 
 .second {
