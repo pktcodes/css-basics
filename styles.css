@@ -1,7 +1,7 @@
 /* 
-position:static - default, always positioned according to the normal flow,
-position:relative - position relative to it's normal position.
-top,bottom,left, right
+position:absolute - relative to the parent with position:relative.
+postion:fixed - relative to viewport(screen),stays as we are scrolling 
+will use other content to fill out the space
 */
 
 div {
@@ -13,20 +13,24 @@ div {
 .first {
   background: blue;
   color: white;
-  position: relative;
-  /* top: 200px; */
-  bottom: 2rem;
-  /* left: 14%; */
-  right: 20px;
 }
 
 .second {
   background: green;
   color: white;
+  position: relative;
 }
 
 .special {
   background: fuchsia;
   color: black;
   font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  min-height: 100vh;
+  background: blue;
 }
