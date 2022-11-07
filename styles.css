@@ -4,6 +4,18 @@ postion:fixed - relative to viewport(screen),stays as we are scrolling
 will use other content to fill out the space
 */
 
+.navbar {
+  background: red;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 div {
   border: 5px solid red;
   background: yellow;
@@ -18,16 +30,12 @@ div {
 .second {
   background: green;
   color: white;
-  position: relative;
 }
 
 .special {
   background: fuchsia;
   color: black;
   font-size: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .container {
