@@ -4,22 +4,47 @@ content:'' - required
 img --- does not work
 */
 
-p::before {
-  content: "hello world";
-  font-size: 2rem;
-  color: blue;
-  font-weight: 700;
-  display: block;
-  background: yellow;
+div {
+  width: 70vw;
+  /* border: 3px solid red; */
+  margin: 100px auto;
+  position: relative;
 }
 
-p::after {
-  content: "";
-  font-size: 1rem;
-  color: red;
-  font-weight: 700;
-  background: greenyellow;
-  display: block;
+img {
   width: 100%;
-  height: 3rem;
+  display: block;
+}
+
+div::before {
+  content: "";
+  border: 2px solid grey;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  z-index: -2;
+  transition: all 0.5s linear;
+}
+
+div::after {
+  content: "";
+  background: rgba(128, 128, 128, 0.5);
+  /* background: grey; */
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+
+div:hover::before,
+div:hover::after {
+  top: 0;
+  left: 0;
 }
