@@ -1,66 +1,37 @@
 /* 
-Media Queries
-Responsive Design
-Style Elements on Different Screen Sizes
-min-width: --- starting from
-max-width: --- up to
-Mobile First
+z-index --- z-axis
+0 - default
+does not work on position:static;
 */
 
-body {
-  background: yellow;
+img {
+  width: 250px;
+  height: 250px;
+  position: absolute;
 }
 
 .banner {
-  background: blue;
-  color: white;
-  text-align: center;
-  text-decoration: underline;
-  text-transform: capitalize;
+  position: relative;
+  border: 5px solid red;
+  width: 80vw;
+  height: 75vh;
+  margin: 50px auto;
 }
 
-/* @media screen and (min-width: 576px) {
-  body {
-    background: blue;
-  }
-
-  .banner {
-    background: yellow;
-    color: black;
-    font-size: 40px;
-  }
+.first-image {
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 
-@media screen and (min-width: 776px) {
-  body {
-    background: green;
-  }
-
-  .banner {
-    background: fuchsia;
-    color: black;
-  }
-} */
-
-@media screen and (max-width: 576px) {
-  body {
-    background: blue;
-  }
-
-  .banner {
-    background: yellow;
-    color: black;
-  }
+.second-image {
+  top: 10%;
+  left: 10%;
+  z-index: 2;
 }
 
-/* Larger max-width overrides other max-width */
-@media screen and (max-width: 776px) {
-  body {
-    background: green;
-  }
-
-  .banner {
-    background: fuchsia;
-    color: black;
-  }
+.third-image {
+  top: 20%;
+  left: 20%;
+  z-index: -1;
 }
