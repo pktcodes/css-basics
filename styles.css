@@ -1,17 +1,29 @@
-/* Selectors Re-Visited - :hover pseudo-class Selector */
-
-div:hover {
-  color: green;
+/* 
+:link - unvisited links with href
+:visited - visited links
+:hover - hover
+:active - as the user click's 
+a - all links
+*/
+a {
+  display: block;
+  background: yellow;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
 }
 
-.header:hover {
-  color: white;
-  background: blue;
-  letter-spacing: 5px;
+a:link {
+  color: aqua;
+}
+
+a:visited {
+  color: red;
 }
 
 a:hover {
-  text-decoration: none;
-  font-size: 20px;
-  background: fuchsia;
+  color: green;
+}
+
+a:active {
+  color: fuchsia;
 }
