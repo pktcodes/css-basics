@@ -1,29 +1,20 @@
 /* 
-:link - unvisited links with href
-:visited - visited links
-:hover - hover
-:active - as the user click's 
-a - all links
+:root root element of the document, higher specificity
+html element
+general styles
+css variables
 */
-a {
-  display: block;
-  background: yellow;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem;
+
+:root {
+  font-size: 10px;
 }
 
-a:link {
-  color: aqua;
-}
-
-a:visited {
+.absolute {
+  font-size: 24px;
   color: red;
 }
 
-a:hover {
-  color: green;
-}
-
-a:active {
-  color: fuchsia;
+.relative {
+  color: blue;
+  font-size: 1.5rem;
 }
