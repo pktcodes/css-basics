@@ -1,19 +1,9 @@
-/* Selectors Re-Visited - Descendant and Child Selectors */
+/* Selectors Re-Visited - ::first-line and ::first-letter */
 
-.header h1 {
-  color: green;
+p::first-line {
+  font-weight: 700;
 }
 
-/* direct child */
-.header > h1 {
-  color: fuchsia;
-}
-
-div h1 {
-  color: red;
-}
-
-/* direct child */
-div > h1 {
-  color: blue;
+p::first-letter {
+  font-size: 150%;
 }
