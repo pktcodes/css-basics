@@ -1,9 +1,17 @@
-/* Selectors Re-Visited - ::first-line and ::first-letter */
+/* Selectors Re-Visited - :hover pseudo-class Selector */
 
-p::first-line {
-  font-weight: 700;
+div:hover {
+  color: green;
 }
 
-p::first-letter {
-  font-size: 150%;
+.header:hover {
+  color: white;
+  background: blue;
+  letter-spacing: 5px;
+}
+
+a:hover {
+  text-decoration: none;
+  font-size: 20px;
+  background: fuchsia;
 }
