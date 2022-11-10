@@ -1,25 +1,22 @@
 /* 
-transform:translate(),scale()rotate(),skew()
+transform:translate() - Hero Example
 */
 
-div {
-  width: 150px;
-  height: 150px;
-  display: inline-block;
+* {
+  margin: 0;
 }
 
-.one {
-  background: red;
-  transform: translateX(75px);
+.hero {
+  min-height: 100vh;
+  position: relative;
 }
 
-.two {
-  background: blue;
-  transform: translateY(-40px);
-}
-
-.three {
-  background: green;
-  /* transform: translateX(50%); */
-  transform: translate(200px, 200px);
+.hero-center {
+  border: 2px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  text-align: center;
 }
