@@ -1,5 +1,6 @@
 /* 
-transform:scale() - 1 is current size 
+transform:rotate() - 1 is current size 
+rotate() = rotateZ();
 */
 
 div {
@@ -10,17 +11,17 @@ div {
 
 .one {
   background: red;
-  transform: scaleX(0.5);
+  transform: rotateZ(20deg);
 }
 
+/* 20deg and 380deg = 360+20 will be same result  */
 .two {
   background: blue;
-  transform: scaleY(2);
+  transform: rotate(380deg);
 }
 
 .three {
   background: green;
-  /* transform: translateX(50%); */
-  /* transform: scale(1.5, 1.5); */
-  transform: scale(2);
+  /* transform: rotateX(10deg); */
+  transform: rotateY(10deg);
 }
