@@ -20,8 +20,17 @@ div:hover {
 
 .two {
   background: blue;
-  transition-property: background;
-  transition-duration: 4s;
+  transition-property: background, border-radius;
+
+  /* 4s for all transition-properties*/
+  /* transition-duration: 4s; */
+
+  /* 4s for background, 2s for border-radius */
+  transition-duration: 4s, 2s;
+}
+
+.two:hover {
+  border-radius: 50%;
 }
 
 .three {
