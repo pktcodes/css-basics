@@ -1,41 +1,46 @@
 /* 
-transition: change over time
-transition-delay:
-shorthand
+how the transition takes place
+transition-timing-function
+transition:all 3s here 5s;
+ease = default
+ease = slow start, fast, slow end
+linear = same speed start to end
+ease-in = slow start
+ease-out = slow end
+ease-in-out = slow start,fast, slow end
 */
 
 div {
-  width: 150px;
-  height: 150px;
-  display: inline-block;
-}
-
-.one {
-  background: red;
-}
-
-.two {
   background: blue;
-  /* transition-property: background, border-radius;
-  transition-duration: 4s, 2s; */
-
-  /* transition delay */
-  /* transition-delay: 2s; */
-
-  /* Transition shorthand for specific*/
-  /* transition: background 4s 2s, border-radius 2s 1s; */
-
-  /* Transition shorthand for all */
-  transition: all 2s 1s;
+  color: white;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  text-align: center;
+  transition: all 2s;
 }
 
-.two:hover {
-  background: chartreuse;
-  border-radius: 50%;
-  transform: scale(2, 2);
-  margin-top: 50%;
+div:hover {
+  transform: translateX(200px);
 }
 
-.three {
-  background: green;
+.ease {
+  transition-timing-function: ease;
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
 }
