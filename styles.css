@@ -1,20 +1,25 @@
 /* 
-:root root element of the document, higher specificity
-html element
-general styles
-css variables
+transform:translate(),scale()rotate(),skew()
 */
 
-:root {
-  font-size: 10px;
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
 }
 
-.absolute {
-  font-size: 24px;
-  color: red;
+.one {
+  background: red;
+  transform: translateX(75px);
 }
 
-.relative {
-  color: blue;
-  font-size: 1.5rem;
+.two {
+  background: blue;
+  transform: translateY(-40px);
+}
+
+.three {
+  background: green;
+  /* transform: translateX(50%); */
+  transform: translate(200px, 200px);
 }
