@@ -1,38 +1,56 @@
 /* 
-animation-fill-mode:what values are applied by the animation outside the time it is executing. 
+CSS VARIABLES AKA CUSTOM PROPERTIES
+allow to store value in one place and re-use it later
+--varName:value
+property:var(--varName);
+scope
+:root{} === global
+element === local
+any property
 */
 
+:root {
+  --primaryColor: red;
+  --cl-secondary: blue;
+  --mainTransition: all 1s linear;
+  --main-spacing: 5px;
+}
+
+h1 {
+  color: var(--cl-secondary);
+}
+
+h2 {
+  color: var(--cl-secondary);
+}
+
+h3 {
+  color: var(--cl-secondary);
+  transition: var(--mainTransition);
+}
+
+h3:hover {
+  color: var(--primaryColor);
+}
+
+p {
+  letter-spacing: var(--main-spacing);
+  transition: var(--mainTransition);
+}
+
+p:hover {
+  color: var(--primaryColor);
+}
+
 div {
-  width: 200px;
-  height: 200px;
-  color: white;
-  margin: 20px;
-  opacity: 0;
+  --primaryPink: fuchsia;
 }
 
-.animation {
-  background: blue;
-  animation: move 3s 3;
-  animation-fill-mode: forwards;
+.main-text {
+  color: var(--primaryPink);
 }
 
-@keyframes move {
-  0% {
-    opacity: 0.1;
-  }
-  25% {
-    opacity: 0.25;
-    transform: translateX(50px);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateX(200px);
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(50px);
-  }
+/* Pink color is not applied to h3 is not inside of div to inherit this color */
+h3 {
+  color: var(--primaryPink);
 }
