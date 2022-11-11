@@ -1,6 +1,5 @@
 /* 
-text-shadow
-box-shadow
+Browser Prefixes
 */
 
 /* text-shadow: x-axis y-axis blur color */
@@ -18,8 +17,11 @@ h1 {
   transition: all 2s linear;
 }
 
+/* browser prefixes - used as a way by browser to support the latest CSS3 */
 .box:hover {
+  /* for mozilla */
   -moz-box-shadow: 51px 54px 22px 16px rgba(0, 250, 71, 0.75);
+  /* for safari */
   -webkit-box-shadow: 51px 54px 22px 16px rgba(0, 250, 71, 0.75);
   box-shadow: 51px 54px 22px 16px rgba(0, 250, 71, 0.75);
 }
