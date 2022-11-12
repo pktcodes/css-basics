@@ -1,27 +1,16 @@
 /* 
-Browser Prefixes
+Semantic HTML
+Semantic elements = elements with a meaning to both the browser and the developer..
 */
 
 /* text-shadow: x-axis y-axis blur color */
-h1 {
-  text-shadow: 0px 0px 5px red;
+
+.navbar {
+  background: red;
+  font-size: 2rem;
 }
 
-/* text-shadow: x-axis y-axis blur color */
-.box {
-  background: yellow;
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  box-shadow: 5px 5px 5px blue;
-  transition: all 2s linear;
-}
-
-/* browser prefixes - used as a way by browser to support the latest CSS3 */
-.box:hover {
-  /* for mozilla */
-  -moz-box-shadow: 51px 54px 22px 16px rgba(0, 250, 71, 0.75);
-  /* for safari */
-  -webkit-box-shadow: 51px 54px 22px 16px rgba(0, 250, 71, 0.75);
-  box-shadow: 51px 54px 22px 16px rgba(0, 250, 71, 0.75);
+nav {
+  background: greenyellow;
+  font-size: 2rem;
 }
