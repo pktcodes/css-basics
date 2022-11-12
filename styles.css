@@ -1,16 +1,8 @@
 /* 
-:is()
-The :is() CSS pseudo-class function takes a selector list as its argument, and selects any element that can be selected by one of the selectors in that list.
+:not()
+The :not() CSS pseudo-class represents elements that do not match a list of selectors. Since it prevents specific items from being selected, 
 */
 
-/* Want to add color red to h2 only which is inside the elements */
-/* nav h2:hover,
-div h2:hover,
-section h2:hover {
-  color: red;
-} */
-
-/* write less code using is:() */
-:is(nav, div, section) h2:hover {
+.special :not(h2) {
   color: red;
 }
