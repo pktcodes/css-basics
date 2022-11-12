@@ -1,16 +1,23 @@
 /* 
-Semantic HTML
-Semantic elements = elements with a meaning to both the browser and the developer..
+object-fit: cover,contain, fill, none, scale-down
+It is similar to background image
 */
 
-/* text-shadow: x-axis y-axis blur color */
-
-.navbar {
-  background: red;
-  font-size: 2rem;
+img {
+  width: 100%;
+  display: block;
+  height: 300px;
+  object-fit: cover;
 }
 
-nav {
-  background: greenyellow;
-  font-size: 2rem;
+.first-image {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+}
+
+.second-image {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
 }
